@@ -26,13 +26,13 @@ function App() {
        setBotArmy(newBots);
     })
   }
-  
+
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route exact path="/"  element={<BotCollection/>} ></Route> 
-          <Route exact path="/bot-army" element={<YourBotArmy/>}> </Route>
+          <Route exact path="/" element={<BotCollection addBotToArmy={addBotToArmy} removePermanently={removePermanently} />} ></Route> 
+          <Route exact path="/bot-army" element={<YourBotArmy botArmy={botArmy} removeFromArmy={removeFromArmy} />}> </Route>
         </Routes>
       </BrowserRouter>
     </>
