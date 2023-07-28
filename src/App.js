@@ -9,8 +9,8 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route exact path="/"> <BotCollection/> </Route> 
-          <Route exact path="/bot-army" > <YourBotArmy/> </Route>
+          <Route exact path="/"  element={<BotCollection/>} ></Route> 
+          <Route exact path="/bot-army" element={<YourBotArmy/>}> </Route>
         </Routes>
       </BrowserRouter>
     </>
