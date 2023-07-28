@@ -8,9 +8,7 @@ function App() {
   const [botArmy,setBotArmy] = useState([]);
 
   function addBotToArmy(bot) {
-    if (botArmy.includes(bot)) {
-      setBotArmy(botArmy.filter((item) => item !== bot));
-    } else {
+    if (!botArmy.includes(bot)) {
       setBotArmy([...botArmy, bot]);
     }
   }
