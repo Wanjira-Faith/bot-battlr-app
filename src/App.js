@@ -6,9 +6,12 @@ import YourBotArmy from './components/YourBotArmy';
 
 function App() {
   return (
-    <div>
-
-    </div>
+    <>
+      <BrowserRouter>
+      <Route exact path='/' Component={BotCollection}/>
+      <Route exact path='/bot-army' Component={YourBotArmy}/>
+      </BrowserRouter>
+    </>
   );
 }
 
