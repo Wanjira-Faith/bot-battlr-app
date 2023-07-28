@@ -38,4 +38,9 @@
   word-break: break-all;
 }
 
-
+.bot-item div {
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
