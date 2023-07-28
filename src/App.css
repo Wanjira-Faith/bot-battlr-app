@@ -28,5 +28,14 @@
   border-radius: 5px;
 }
 
+.bot-item h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.bot-item p {
+  margin: 5px 0;
+  word-break: break-all;
+}
 
 
