@@ -3,6 +3,10 @@ import BotItem from './BotItem'
 
 function YourBotArmy({botArmy, removeFromArmy}) {
 
+   function handleRemoveFromArray(bot) {
+     removeFromArmy(bot);
+   }
+
   return (
     <div className='army-collection'>
       <h2>Bot Army Collection</h2>
