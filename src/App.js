@@ -12,6 +12,11 @@ function App() {
       setBotArmy([...botArmy, bot]);
     }
   }
+
+  function removeFromArmy(bot) {
+    const newBots = botArmy.filter((item) => item !== bot)
+    setBotArmy(newBots);
+  }
   return (
     <>
       <BrowserRouter>
