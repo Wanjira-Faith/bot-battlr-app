@@ -15,7 +15,7 @@ function BotCollection() {
     <h2>Bot Collection</h2>
       <div className="bot-collection">
         {bots.map((bot) => {
-          <BotItem key={bot.id} bot={bot} />;
+          return <BotItem key={bot.id} bot={bot} />;
         })}
       </div>
     </>
