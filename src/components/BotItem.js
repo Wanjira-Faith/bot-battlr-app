@@ -2,7 +2,10 @@ import React from 'react'
 
 function BotItem({bot}) {
   return (
-    <div>
+    <div className='bot-item'>
+        <h3>Name: {bot.name}</h3>
+
+
       
     </div>
   )
