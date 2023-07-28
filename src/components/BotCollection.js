@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import BotItem from './BotItem';
 
 function BotCollection() {
     const [bots, setBots] = useState([]);
@@ -7,12 +8,18 @@ function BotCollection() {
         fetch(" http://localhost:3000/bots")
         .then((r) => r.json())
         .then((bots) => setBots(bots))
-    }, [])
+    }, []);
+
   return (
-    <div>
-      
-    </div>
-  )
+    <>
+    <h2>Bot Collection</h2>
+      <div className="bot-collection">
+        {bots.map((bot) => {
+          <BotItem key={bot.id} bot={bot} />;
+        })}
+      </div>
+    </>
+  );
 }
 
 export default BotCollection
