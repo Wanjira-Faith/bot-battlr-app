@@ -6,6 +6,14 @@ import YourBotArmy from './components/YourBotArmy';
 
 function App() {
   const [botArmy,setBotArmy] = useState([]);
+
+  function addBoToArmy(bot) {
+    if (botArmy.includes(bot)) {
+      setBotArmy(botArmy.filter((item) => item !== bot));
+    } else {
+      setBotArmy([...botArmy, bot]);
+    }
+  }
  
   return (
     <>
