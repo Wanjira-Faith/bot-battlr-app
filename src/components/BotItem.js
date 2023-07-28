@@ -1,6 +1,6 @@
 import React from 'react'
 
-function BotItem() {
+function BotItem({bot}) {
   return (
     <div>
       
