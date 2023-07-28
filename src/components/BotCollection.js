@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import BotItem from './BotItem';
 
-function BotCollection() {
+function BotCollection({addBotToArmy, removePermanently}) {
     const [bots, setBots] = useState([]);
 
     useEffect(() => {
@@ -15,7 +15,7 @@ function BotCollection() {
     <h2>Bot Collection</h2>
       <div className="bot-collection">
         {bots.map((bot) => {
-          return <BotItem key={bot.id} bot={bot} />;
+          return <BotItem key={bot.id} bot={bot} addBotToArmy={addBotToArmy} removePermanently={removePermanently} />;
         })}
       </div>
     </>
