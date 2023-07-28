@@ -17,6 +17,16 @@ function App() {
     const newBots = botArmy.filter((item) => item !== bot)
     setBotArmy(newBots);
   }
+
+  function removePermanently(bot) {
+    fetch(`http://localhost:3000/bots/${bot.id}`, {method: "DELETE"})
+    .then((r) => r.json())
+    .then(() => {
+       const newBots = botArmy.filter((item) => item !== bot);
+       setBotArmy(newBots);
+    })
+  }
+  
   return (
     <>
       <BrowserRouter>
