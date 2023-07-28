@@ -1,10 +1,12 @@
 import './App.css';
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter, Route, Routes,  } from 'react-router-dom';
 import BotCollection from './components/BotCollection';
 import YourBotArmy from './components/YourBotArmy';
 
 function App() {
+  const [botArmy,setBotArmy] = useState([]);
+ 
   return (
     <>
       <BrowserRouter>
