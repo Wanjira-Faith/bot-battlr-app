@@ -1,6 +1,8 @@
 import React from 'react'
 
-function BotItem({bot}) {
+function BotItem({bot, addBotToArmy, removePermananetly}) {
+
+  }
   return (
     <div className="bot-item">
       <img src={bot.avatar_url} alt={bot.name} />
