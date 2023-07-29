@@ -56,9 +56,13 @@
 .delete-btn:hover{
   background-color: rgba(168, 19, 19, 0.812);
 }
-h2 {
+.App {
   text-align: center;
-  padding: 15px;
-  margin-bottom: 10px;
-  background-color: rgba(19, 19, 124, 0.867);
 }
+.army-collection {
+  background-color: greenyellow;
+  display: flex;
+  height: fit-content;
+  border-radius: 10px;
+}
+
