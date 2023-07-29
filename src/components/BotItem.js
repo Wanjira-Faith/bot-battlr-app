@@ -10,7 +10,6 @@ function BotItem({bot, addBotToArmy, removePermananetly}) {
     removePermananetly(bot)
   }
 
-  }
   return (
     <div className="bot-item" key={bot.id} onClick={() => handleAdd(bot)} >
       <img src={bot.avatar_url} alt={bot.name} />
@@ -31,7 +30,7 @@ function BotItem({bot, addBotToArmy, removePermananetly}) {
           {bot.armor}
         </p>
       </div>
-      <button>X</button>
+      <button onClick={() => handleDelete(bot)}>X</button>
     </div>
   );
 }
