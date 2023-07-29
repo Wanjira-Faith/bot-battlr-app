@@ -1,6 +1,6 @@
 import './App.css';
 import React, { useState } from 'react';
-import { BrowserRouter, Route, Routes,  } from 'react-router-dom';
+// import { BrowserRouter, Route, Routes,  } from 'react-router-dom';
 import BotCollection from './components/BotCollection';
 import YourBotArmy from './components/YourBotArmy';
 
@@ -28,14 +28,10 @@ function App() {
   }
 
   return (
-    <>
-      <BrowserRouter>
-        <Routes>
-          <Route exact path="/" element={<BotCollection addBotToArmy={addBotToArmy} removePermanently={removePermanently} />} ></Route> 
-          <Route exact path="/bot-army" element={<YourBotArmy botArmy={botArmy} removeFromArmy={removeFromArmy} />}> </Route>
-        </Routes>
-      </BrowserRouter>
-    </>
+    <div className="App">
+      <YourBotArmy botArmy={botArmy} removeFromArmy={removeFromArmy} />
+      <BotCollection addBotToArmy={addBotToArmy} removePermanently={removePermanently} />
+    </div>
   );
 }
 
