@@ -58,7 +58,7 @@
   transition: 0.3s ease;
 }
 .delete-btn:hover{
-  background-color: rgba(255, 0, 0, 0.696);
+  background-color: rgba(138, 26, 26, 0.604);
 }
 h2 {
   text-align: center;
