@@ -27,6 +27,7 @@ function BotItem({bot, addBotToArmy, removePermananetly}) {
           {bot.armor}
         </p>
       </div>
+      <button>X</button>
     </div>
   );
 }
