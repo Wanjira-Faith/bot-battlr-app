@@ -15,7 +15,12 @@ function BotCollection({addBotToArmy, removePermanently}) {
     <h2>Bot Collection</h2>
       <div className="bot-collection">
         {bots.map((bot) => {
-          return <BotItem key={bot.id} bot={bot} addBotToArmy={addBotToArmy} removePermanently={removePermanently} />;
+          return <BotItem 
+          key={bot.id} 
+          bot={bot}
+          addBotToArmy={addBotToArmy} 
+          removePermanently={removePermanently} 
+          />;
         })}
       </div>
     </>
