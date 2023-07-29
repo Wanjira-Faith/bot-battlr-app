@@ -8,7 +8,7 @@ function BotItem({bot, addBotToArmy, removePermananetly}) {
 
   }
   return (
-    <div className="bot-item">
+    <div className="bot-item" key={bot.id} >
       <img src={bot.avatar_url} alt={bot.name} />
       <h3>{bot.name}</h3>
       <p>{bot.catchphrase}</p>
