@@ -12,11 +12,12 @@ function BotItem({bot, addBotToArmy, removePermanently}) {
   }
 
   return (
-    <div className="bot-item" key={bot.id} onClick={() => handleAdd(bot)} >
+    <div className="bot-item" key={bot.id} onClick={() => handleAdd(bot)}>
       <img src={bot.avatar_url} alt={bot.name} />
       <h3>{bot.name}</h3>
       <p>{bot.catchphrase}</p>
       <p>Class: {bot.bot_class}</p>
+      <hr />
       <div>
         <p>
           <i className="fa-solid fa-heart-pulse"></i>
@@ -31,7 +32,9 @@ function BotItem({bot, addBotToArmy, removePermanently}) {
           {bot.armor}
         </p>
       </div>
-      <button className='delete-btn' onClick={() => handleDelete(bot)}>X</button>
+      <button className="delete-btn" onClick={() => handleDelete(bot)}>
+        X
+      </button>
     </div>
   );
 }
