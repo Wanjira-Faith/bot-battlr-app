@@ -3,6 +3,7 @@ import React from 'react'
 function BotItem({bot, addBotToArmy, removePermanently}) {
 
   function handleAdd(bot) {
+    console.log(bot);
     addBotToArmy(bot)
   }
 
