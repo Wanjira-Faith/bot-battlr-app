@@ -19,10 +19,16 @@
 .bot-item {
   padding: 10px;
   border-radius: 5px;
+  background-color: #f0f0f0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: 0.2s ease;
+}
+
+.bot-item:hover {
+  background-color: rgba(76, 76, 176, 0.319);
 }
 
 .bot-item img {
-  background-color: #f0f0f0;
   width: 100%;
   height: auto;
   border-radius: 5px;
