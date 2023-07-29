@@ -2,6 +2,10 @@ import React from 'react'
 
 function BotItem({bot, addBotToArmy, removePermananetly}) {
 
+  function handleAdd(bot) {
+    addBotToArmy(bot)
+  }
+
   }
   return (
     <div className="bot-item">
