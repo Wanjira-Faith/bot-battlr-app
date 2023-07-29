@@ -44,3 +44,9 @@
   align-items: center;
   gap: 6px;
 }
+.delete-btn {
+  background-color: red;
+  border: none;
+  font-weight: bold;
+  margin-top: 10px;
+}
