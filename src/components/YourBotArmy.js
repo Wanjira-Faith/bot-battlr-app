@@ -3,7 +3,7 @@ import BotItem from './BotItem'
 
 function YourBotArmy({botArmy, removeFromArmy}) {
 
-   function handleRemoveFromArray(bot) {
+   function handleRemoveFromArmy(bot) {
      removeFromArmy(bot);
    }
 
@@ -12,7 +12,7 @@ function YourBotArmy({botArmy, removeFromArmy}) {
       <h2>Bot Army Collection</h2>
       {botArmy.map((bot) => {
         return (
-          <div key={bot.id} onClick={() => handleRemoveFromArray(bot)} >
+          <div key={bot.id} onClick={() => handleRemoveFromArmy(bot)} >
             <BotItem
               bot={bot}
               botArmy={botArmy}
