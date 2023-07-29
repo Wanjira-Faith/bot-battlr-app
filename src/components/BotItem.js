@@ -1,13 +1,13 @@
 import React from 'react'
 
-function BotItem({bot, addBotToArmy, removePermananetly}) {
+function BotItem({bot, addBotToArmy, removePermanently}) {
 
   function handleAdd(bot) {
     addBotToArmy(bot)
   }
 
   function handleDelete(bot) {
-    removePermananetly(bot)
+    removePermanently(bot)
   }
 
   return (
