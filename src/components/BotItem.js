@@ -16,7 +16,7 @@ function BotItem({bot, addBotToArmy, removePermananetly}) {
       <h3>{bot.name}</h3>
       <p>{bot.catchphrase}</p>
       <p>Class: {bot.bot_class}</p>
-      <div style={{ display: 'flex' }}>
+      <div>
         <p>
           <i className="fa-solid fa-heart-pulse"></i>
           {bot.health}
