@@ -30,7 +30,7 @@ function BotItem({bot, addBotToArmy, removePermananetly}) {
           {bot.armor}
         </p>
       </div>
-      <button onClick={() => handleDelete(bot)}>X</button>
+      <button className='delete-btn' onClick={() => handleDelete(bot)}>X</button>
     </div>
   );
 }
