@@ -6,6 +6,10 @@ function BotItem({bot, addBotToArmy, removePermananetly}) {
     addBotToArmy(bot)
   }
 
+  function handleDelete(bot) {
+    removePermananetly(bot)
+  }
+
   }
   return (
     <div className="bot-item" key={bot.id} onClick={() => handleAdd(bot)} >
