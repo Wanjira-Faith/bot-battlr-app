@@ -1,9 +1,8 @@
 import React from 'react'
-import BotItem from './BotItem'
 
 function YourBotArmy({ botArmy, removeFromArmy}) {
+
   function handleRemoveFromArmy(bot) {
-    console.log(bot.id);
     removeFromArmy(bot);
   }
 
