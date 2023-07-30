@@ -12,7 +12,7 @@ function YourBotArmy({ botArmy, removeFromArmy}) {
       <div className="army-collection">
         {botArmy.map((bot) => {
           return (
-            <div key={bot.id} onClick={handleRemoveFromArmy}>
+            <div key={bot.id} onClick={() => handleRemoveFromArmy(bot)}>
               <BotItem
                 bot={bot}
                 botArmy={botArmy}
