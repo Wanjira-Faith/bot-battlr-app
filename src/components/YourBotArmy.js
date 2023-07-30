@@ -1,7 +1,7 @@
 import React from 'react'
 import BotItem from './BotItem'
 
-function YourBotArmy({ botArmy, removeFromArmy, addBotToArmy }) {
+function YourBotArmy({ botArmy, removeFromArmy}) {
   function handleRemoveFromArmy(bot) {
     removeFromArmy(bot);
   }
@@ -12,12 +12,11 @@ function YourBotArmy({ botArmy, removeFromArmy, addBotToArmy }) {
       <div className="army-collection">
         {botArmy.map((bot) => {
           return (
-            <div key={bot.id} onClick={() => handleRemoveFromArmy(bot)}>
+            <div key={bot.id} onClick={handleRemoveFromArmy}>
               <BotItem
                 bot={bot}
                 botArmy={botArmy}
                 removeFromArmy={removeFromArmy}
-                addBotToArmy={addBotToArmy}
               />
             </div>
           );
