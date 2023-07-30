@@ -64,5 +64,41 @@
   display: flex;
   border-radius: 10px;
   min-height: 300px;
+  padding: 10px;
+  gap: 20px;
 }
+
+.army-collection div {
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+}
+
+.army-collection img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.army-collection h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.army-collection p {
+  word-break: break-all;
+  margin-bottom: 10px;
+}
+.icons {
+  display: flex;
+  gap: 6px;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+
+
+
+
+
 
