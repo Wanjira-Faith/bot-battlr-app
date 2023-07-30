@@ -10,7 +10,7 @@ function YourBotArmy({ botArmy, removeFromArmy}) {
   return (
     <>
       <h2 className="army-header">
-        Click on a Bot in the bot collection to enlist it to your army.
+        Click on a bot in the bot collection to enlist it in your army.
       </h2>
       <div className="army-collection">
         {botArmy.map((bot) => (
