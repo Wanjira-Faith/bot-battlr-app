@@ -14,10 +14,15 @@
 Bot Battlr App is a web application built using React that allows users to create and manage their own army of bots. Users can browse a collection of bots, add them to their army, and remove them permanently. The app also utilizes React Router for smooth navigation between different routes.
 
 # Core Features
-* See profiles of all bots in the Bot Collection.
-* Add an individual bot to the user's bot army  by clicking on it.
-* Release a bot from the user's bot army by clicking on it.
-* Discharge a bot from their service permanently by clicking the "x" button, deleting the bot from the backend and frontend.
+* See profiles of all bots rendered in `BotCollection`.
+* Add an individual bot to my army by clicking on it. The selected bot should
+  render in the `YourBotArmy` component. The bot can be enlisted only **once**.
+  The bot **does not** disappear from the `BotCollection`.
+* Release a bot from my army by clicking on it. The bot disappears from the
+  `YourBotArmy` component.
+* Discharge a bot from their service forever, by clicking the red button marked
+  "x", which would delete the bot both from the backend and from the
+  `YourBotArmy` on the frontend.
 
 # Technologies Used
 * React
