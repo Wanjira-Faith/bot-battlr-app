@@ -18,7 +18,7 @@ function YourBotArmy({ botArmy, removeFromArmy}) {
             <p>{bot.catchphrase}</p>
             <p>Class: {bot.bot_class}</p>
             <hr />
-            <div>
+            <div className='icons'>
               <p>
                 <i className="fa-solid fa-heart-pulse"></i>
                 {bot.health}
