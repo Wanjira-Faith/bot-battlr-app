@@ -10,6 +10,13 @@ function BotCollection({addBotToArmy, removePermanently}) {
         .then((bots) => setBots(bots))
     }, []);
 
+     function handleRemovePermanently(bot) {
+       const newBots = bots.filter((item) => item.id !== bot.id);
+       setBots(newBots);
+
+       removePermanently(bot);
+     }
+
   return (
     <>
     <h2>Bot Collection</h2>
@@ -19,7 +26,7 @@ function BotCollection({addBotToArmy, removePermanently}) {
           key={bot.id} 
           bot={bot}
           addBotToArmy={addBotToArmy} 
-          removePermanently={removePermanently} 
+          removePermanently={handleRemovePermanently} 
           />;
         })}
       </div>
